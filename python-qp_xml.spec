@@ -14,7 +14,7 @@ Source0:	%{module}-%{version}.tar.gz
 URL:		http://www.lyra.org/greg/python/
 Requires:	expat
 %pyrequires_eq	python
-BuildRequires:	python-devel >= 2.2
+BuildRequires:	python-devel >= 2.2.1
 BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
