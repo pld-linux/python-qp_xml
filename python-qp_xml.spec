@@ -1,10 +1,11 @@
+
 %define module qp_xml
 
 Summary:	Class library to render XML documents from within Python  
 Summary(pl):	Modu³ do renderowania domumentów XML przy u¿yciu Pythona  
 Name:		python-%{module}
 Version:	1.0
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Python
 Group(de):	Entwicklung/Sprachen/Python
@@ -12,10 +13,14 @@ Group(pl):	Programowanie/Jêzyki/Python
 Source0:	%{module}-%{version}.tar.gz
 #Source0:	http://www.lyra.org/greg/python/qp_xml.py
 URL:		http://www.lyra.org/greg/python/
-Requires:	python >= 1.5
+Requires:	expat
+%requires_eq	python
+BuildRequires:	python-devel >= 2.1
+BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Requires:	expat
+
+%include /usr/lib/rpm/macros.python
 
 %description
 This module provides quick XML documents rendering using expat parser.
@@ -29,13 +34,16 @@ parsera expat.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}/python1.5
+install -d $RPM_BUILD_ROOT%{py_sitedir}
 
-mv -f *.py $RPM_BUILD_ROOT%{_libdir}/python1.5
+install *.py $RPM_BUILD_ROOT%{py_sitedir}
+
+%py_comp $RPM_BUILD_ROOT%{py_sitedir}
+%py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 					
 %files
 %defattr(644,root,root,755)
-%{_libdir}/python1.5/qp_xml.py
+%{py_sitedir}/*.py?
