@@ -13,6 +13,7 @@ Group(de):	Entwicklung/Sprachen/Python
 Group(es):	Desarrollo/Lenguages/Python
 Group(fr):	Development/Langues/Python
 Group(pl):	Programowanie/Jêzyki/Python
+Group(pt):	Desenvolvimento/Línguas/Python
 Source0:	%{module}-%{version}.tar.gz
 #Source0:	http://www.lyra.org/greg/python/qp_xml.py
 URL:		http://www.lyra.org/greg/python/
