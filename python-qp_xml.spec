@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.python
 
 %define module qp_xml
 
@@ -5,22 +6,22 @@ Summary:	Class library to render XML documents from within Python
 Summary(pl):	Modu³ do renderowania dokumentów XML przy u¿yciu Pythona
 Name:		python-%{module}
 Version:	1.0
-Release:	2
+Release:	3
 License:	distributable
 Group:		Development/Languages/Python
 Group(de):	Entwicklung/Sprachen/Python
+Group(es):	Desarrollo/Lenguages/Python
+Group(fr):	Development/Langues/Python
 Group(pl):	Programowanie/Jêzyki/Python
 Source0:	%{module}-%{version}.tar.gz
 #Source0:	http://www.lyra.org/greg/python/qp_xml.py
 URL:		http://www.lyra.org/greg/python/
 Requires:	expat
 %requires_eq	python
-BuildRequires:	python-devel >= 2.1
+BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%include /usr/lib/rpm/macros.python
 
 %description
 This module provides quick XML documents rendering using expat parser.
