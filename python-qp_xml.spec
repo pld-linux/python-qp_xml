@@ -10,6 +10,7 @@ Release:	5
 License:	distributable
 Group:		Libraries/Python
 Source0:	%{module}-%{version}.tar.gz
+# Source0-md5:	5e3936c5824ec766838c99f3d14a441f
 #Source0:	http://www.lyra.org/greg/python/qp_xml.py
 URL:		http://www.lyra.org/greg/python/
 Requires:	expat
