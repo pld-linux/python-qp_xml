@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.python
 
-%define module qp_xml
+%define	module	qp_xml
 
 Summary:	Class library to render XML documents from within Python
 Summary(pl):	Modu³ do renderowania dokumentów XML przy u¿yciu Pythona
