@@ -13,7 +13,7 @@ Source0:	%{module}-%{version}.tar.gz
 #Source0:	http://www.lyra.org/greg/python/qp_xml.py
 URL:		http://www.lyra.org/greg/python/
 Requires:	expat
-%requires_eq	python
+%pyrequires_eq	python
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
