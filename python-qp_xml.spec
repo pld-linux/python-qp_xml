@@ -6,9 +6,9 @@ Summary:	Class library to render XML documents from within Python
 Summary(pl):	Modu³ do renderowania dokumentów XML przy u¿yciu Pythona
 Name:		python-%{module}
 Version:	1.0
-Release:	3
+Release:	4
 License:	distributable
-Group:		Development/Languages/Python
+Group:		Libraries/Python
 Source0:	%{module}-%{version}.tar.gz
 #Source0:	http://www.lyra.org/greg/python/qp_xml.py
 URL:		http://www.lyra.org/greg/python/
