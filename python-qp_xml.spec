@@ -1,8 +1,8 @@
 
 %define module qp_xml
 
-Summary:	Class library to render XML documents from within Python  
-Summary(pl):	Modu³ do renderowania domumentów XML przy u¿yciu Pythona  
+Summary:	Class library to render XML documents from within Python
+Summary(pl):	Modu³ do renderowania dokumentów XML przy u¿yciu Pythona
 Name:		python-%{module}
 Version:	1.0
 Release:	2
