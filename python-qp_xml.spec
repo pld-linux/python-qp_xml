@@ -2,7 +2,7 @@
 %define	module	qp_xml
 
 Summary:	Class library to render XML documents from within Python
-Summary(pl):	Modu≥ do renderowania dokumentÛw XML przy uøyciu Pythona
+Summary(pl.UTF-8):   Modu≈Ç do renderowania dokument√≥w XML przy u≈ºyciu Pythona
 Name:		python-%{module}
 Version:	1.0
 Release:	9
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module provides quick XML documents rendering using expat parser.
 
-%description -l pl
-Ten modu≥ umoøliwia szybkie renderowanie dokumentÛw XML przy uøyciu
+%description -l pl.UTF-8
+Ten modu≈Ç umo≈ºliwia szybkie renderowanie dokument√≥w XML przy u≈ºyciu
 parsera expat.
 
 %prep
