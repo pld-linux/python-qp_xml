@@ -5,7 +5,7 @@ Summary:	Class library to render XML documents from within Python
 Summary(pl.UTF-8):	Moduł do renderowania dokumentów XML przy użyciu Pythona
 Name:		python-%{module}
 Version:	1.0
-Release:	12
+Release:	13
 License:	distributable
 Group:		Libraries/Python
 Source0:	%{module}-%{version}.tar.gz
